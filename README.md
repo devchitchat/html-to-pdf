@@ -16,4 +16,17 @@ This project was created using `bun init` in bun v1.3.12. [Bun](https://bun.com)
 
 # Usage
 
-`curl -X POST http://localhost:3000 --data-binary @file.html --output out.pdf`
+```sh
+curl -X POST http://localhost:3000 --data-binary @file.html --output out.pdf
+```
+
+# Docker
+
+```sh
+docker build -t html-to-pdf .
+docker run -p 3000:3000 html-to-pdf
+```
+
+```sh
+curl -X POST http://localhost:3000 --data-binary @file.html --output out.pdf
+```
