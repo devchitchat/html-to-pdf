@@ -1,0 +1,50 @@
+{
+  "name": "@devchitchat/html-to-pdf",
+  "version": "0.0.1",
+  "description": "A Bun HTTP server that converts HTML to PDF. POST HTML, receive a PDF stream.",
+  "module": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "bun index.js",
+    "test": "bun test"
+  },
+  "keywords": [
+    "bun",
+    "html",
+    "pdf",
+    "html-to-pdf",
+    "pdfmake",
+    "server"
+  ],
+  "author": "Joey Guerra",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devchitchat/html-to-pdf.git"
+  },
+  "homepage": "https://github.com/devchitchat/html-to-pdf#readme",
+  "bugs": {
+    "url": "https://github.com/devchitchat/html-to-pdf/issues"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "dependencies": {
+    "html-to-pdfmake": "^2.5.33",
+    "jsdom": "^29.1.1",
+    "pdfmake": "^0.3.7"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
