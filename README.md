@@ -9,7 +9,11 @@ bun install
 To run:
 
 ```bash
-bun run index.ts
+bun run index.js
 ```
 
 This project was created using `bun init` in bun v1.3.12. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+
+# Usage
+
+`curl -X POST http://localhost:3000 --data-binary @file.html --output out.pdf`
